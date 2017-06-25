@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        
+        //ONESIGNAL
+        
+        
+        OneSignal.initWithLaunchOptions(launchOptions,
+                                        appId: "a920b83d-1496-4797-8f13-a866263afd64",
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
+        // Recommend moving the below line to prompt for push after informing the user about
+        //   how your app will use them.
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+        
+        // Sync hashed email if you have a login system or collect it.
+        //   Will be used to reach the user at the most optimal time of day.
+        // OneSignal.syncHashedEmail(userEmail)
+        
+        
+        rememberUser()
+        
+        let config = ParseClientConfiguration { (ParseMutableClientConfiguration) in
+            
+            ParseMutableClientConfiguration.applicationId = "11b144981119a15105fcd54afcb43b43e098d965"
+            ParseMutableClientConfiguration.clientKey = "38c866ef607792a126fa011dba786e0a29693646"
+            ParseMutableClientConfiguration.server = "http://ec2-52-88-249-139.us-west-2.compute.amazonaws.com:80/parse"
+            
+        }
+        
+        Parse.initialize(with: config)
+        
+        let defaultACL = PFACL()
+        
+        defaultACL.getPublicReadAccess = true
+        defaultACL.getPublicWriteAccess = true
+        
+        PFACL.setDefault(defaultACL, withAccessForCurrentUser: true)
+        
+        
         return true
     }
 
@@ -41,6 +86,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    
+    func rememberUser() {
+        
+        let user : String? = UserDefaults.standard.string(forKey: "username")
+        
+        if user != nil {
+            
+            let board : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let tabBar = board.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            
+            window?.rootViewController = tabBar
+            
+        }
+        
+    }
 }
 

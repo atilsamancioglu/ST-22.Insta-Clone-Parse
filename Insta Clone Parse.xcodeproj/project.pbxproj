@@ -7,23 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE986AD7620BB1B7F44E9438 /* Pods_Insta_Clone_Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A415C0599CBCF3CE5A963F /* Pods_Insta_Clone_Parse.framework */; };
+		C4DC47465B6CAE5F120B3A2F /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AF0D2E4675396C2B2B4EF2 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		FC84B70F1EFA6D6000C1864E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B70E1EFA6D6000C1864E /* AppDelegate.swift */; };
-		FC84B7111EFA6D6000C1864E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7101EFA6D6000C1864E /* FirstViewController.swift */; };
-		FC84B7131EFA6D6000C1864E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7121EFA6D6000C1864E /* SecondViewController.swift */; };
+		FC84B7111EFA6D6000C1864E /* feedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7101EFA6D6000C1864E /* feedVC.swift */; };
+		FC84B7131EFA6D6000C1864E /* uploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7121EFA6D6000C1864E /* uploadVC.swift */; };
 		FC84B7161EFA6D6000C1864E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC84B7141EFA6D6000C1864E /* Main.storyboard */; };
 		FC84B7181EFA6D6000C1864E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC84B7171EFA6D6000C1864E /* Assets.xcassets */; };
 		FC84B71B1EFA6D6000C1864E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC84B7191EFA6D6000C1864E /* LaunchScreen.storyboard */; };
+		FC84B7231EFA784400C1864E /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7221EFA784400C1864E /* signInVC.swift */; };
+		FC84B7271EFA902B00C1864E /* feedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7261EFA902B00C1864E /* feedCell.swift */; };
+		FC84B7521EFAD6EC00C1864E /* selec.png in Resources */ = {isa = PBXBuildFile; fileRef = FC84B7511EFAD6EC00C1864E /* selec.png */; };
+		FC84B76B1EFAEB2000C1864E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B76A1EFAEB2000C1864E /* NotificationService.swift */; };
+		FC84B76F1EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC84B7681EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC84B76D1EFAEB2000C1864E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC84B7031EFA6D6000C1864E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC84B7671EFAEB2000C1864E;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC84B7631EFAE64C00C1864E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC84B76F1EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01AF0D2E4675396C2B2B4EF2 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553182500D986A384F907E3B /* Pods-Insta Clone Parse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta Clone Parse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insta Clone Parse/Pods-Insta Clone Parse.release.xcconfig"; sourceTree = "<group>"; };
+		664F4F2BDD76E26C02558175 /* Pods-Insta Clone Parse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta Clone Parse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insta Clone Parse/Pods-Insta Clone Parse.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE7BC48B4571A738CDAC329 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		D9A415C0599CBCF3CE5A963F /* Pods_Insta_Clone_Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_Clone_Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA478E37CE37A2765BC402E6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		FC84B70B1EFA6D6000C1864E /* Insta Clone Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insta Clone Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC84B70E1EFA6D6000C1864E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC84B7101EFA6D6000C1864E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FC84B7121EFA6D6000C1864E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FC84B7101EFA6D6000C1864E /* feedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedVC.swift; sourceTree = "<group>"; };
+		FC84B7121EFA6D6000C1864E /* uploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadVC.swift; sourceTree = "<group>"; };
 		FC84B7151EFA6D6000C1864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC84B7171EFA6D6000C1864E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC84B71A1EFA6D6000C1864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC84B71C1EFA6D6000C1864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC84B7221EFA784400C1864E /* signInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
+		FC84B7261EFA902B00C1864E /* feedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedCell.swift; sourceTree = "<group>"; };
+		FC84B7511EFAD6EC00C1864E /* selec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selec.png; path = ../../../../Downloads/Images/selec.png; sourceTree = "<group>"; };
+		FC84B7531EFAE14300C1864E /* Insta Clone Parse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Insta Clone Parse.entitlements"; sourceTree = "<group>"; };
+		FC84B7681EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC84B76A1EFAEB2000C1864E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		FC84B76C1EFAEB2000C1864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +75,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE986AD7620BB1B7F44E9438 /* Pods_Insta_Clone_Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84B7651EFAEB2000C1864E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DC47465B6CAE5F120B3A2F /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2629A7770C4990FD14F9A565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9A415C0599CBCF3CE5A963F /* Pods_Insta_Clone_Parse.framework */,
+				01AF0D2E4675396C2B2B4EF2 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83FB98E9F89F9B64747245A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				664F4F2BDD76E26C02558175 /* Pods-Insta Clone Parse.debug.xcconfig */,
+				553182500D986A384F907E3B /* Pods-Insta Clone Parse.release.xcconfig */,
+				CCE7BC48B4571A738CDAC329 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				DA478E37CE37A2765BC402E6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC84B7021EFA6D6000C1864E = {
 			isa = PBXGroup;
 			children = (
 				FC84B70D1EFA6D6000C1864E /* Insta Clone Parse */,
+				FC84B7691EFAEB2000C1864E /* OneSignalNotificationServiceExtension */,
 				FC84B70C1EFA6D6000C1864E /* Products */,
+				83FB98E9F89F9B64747245A5 /* Pods */,
+				2629A7770C4990FD14F9A565 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FC84B70B1EFA6D6000C1864E /* Insta Clone Parse.app */,
+				FC84B7681EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +133,28 @@
 		FC84B70D1EFA6D6000C1864E /* Insta Clone Parse */ = {
 			isa = PBXGroup;
 			children = (
+				FC84B7531EFAE14300C1864E /* Insta Clone Parse.entitlements */,
+				FC84B7511EFAD6EC00C1864E /* selec.png */,
 				FC84B70E1EFA6D6000C1864E /* AppDelegate.swift */,
-				FC84B7101EFA6D6000C1864E /* FirstViewController.swift */,
-				FC84B7121EFA6D6000C1864E /* SecondViewController.swift */,
+				FC84B7221EFA784400C1864E /* signInVC.swift */,
+				FC84B7101EFA6D6000C1864E /* feedVC.swift */,
+				FC84B7121EFA6D6000C1864E /* uploadVC.swift */,
+				FC84B7261EFA902B00C1864E /* feedCell.swift */,
 				FC84B7141EFA6D6000C1864E /* Main.storyboard */,
 				FC84B7171EFA6D6000C1864E /* Assets.xcassets */,
 				FC84B7191EFA6D6000C1864E /* LaunchScreen.storyboard */,
 				FC84B71C1EFA6D6000C1864E /* Info.plist */,
 			);
 			path = "Insta Clone Parse";
+			sourceTree = "<group>";
+		};
+		FC84B7691EFAEB2000C1864E /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FC84B76A1EFAEB2000C1864E /* NotificationService.swift */,
+				FC84B76C1EFAEB2000C1864E /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,18 +164,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC84B71F1EFA6D6000C1864E /* Build configuration list for PBXNativeTarget "Insta Clone Parse" */;
 			buildPhases = (
+				A70B914E92A263EF93802990 /* [CP] Check Pods Manifest.lock */,
 				FC84B7071EFA6D6000C1864E /* Sources */,
 				FC84B7081EFA6D6000C1864E /* Frameworks */,
 				FC84B7091EFA6D6000C1864E /* Resources */,
+				BA88B05AB622EAE88AEA6A57 /* [CP] Embed Pods Frameworks */,
+				AA0A947E0D14AAEDBDBF320D /* [CP] Copy Pods Resources */,
+				FC84B7631EFAE64C00C1864E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC84B76E1EFAEB2000C1864E /* PBXTargetDependency */,
 			);
 			name = "Insta Clone Parse";
 			productName = "Insta Clone Parse";
 			productReference = FC84B70B1EFA6D6000C1864E /* Insta Clone Parse.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC84B7671EFAEB2000C1864E /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC84B7721EFAEB2000C1864E /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				749A78131725F147CFD70173 /* [CP] Check Pods Manifest.lock */,
+				FC84B7641EFAEB2000C1864E /* Sources */,
+				FC84B7651EFAEB2000C1864E /* Frameworks */,
+				FC84B7661EFAEB2000C1864E /* Resources */,
+				2F205632604BD3FBD017F983 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = FC84B7681EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +212,20 @@
 				ORGANIZATIONNAME = "Atil Samancioglu";
 				TargetAttributes = {
 					FC84B70A1EFA6D6000C1864E = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					FC84B7671EFAEB2000C1864E = {
 						CreatedOnToolsVersion = 9.0;
 					};
 				};
@@ -116,6 +244,7 @@
 			projectRoot = "";
 			targets = (
 				FC84B70A1EFA6D6000C1864E /* Insta Clone Parse */,
+				FC84B7671EFAEB2000C1864E /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,26 +254,130 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC84B7521EFAD6EC00C1864E /* selec.png in Resources */,
 				FC84B71B1EFA6D6000C1864E /* LaunchScreen.storyboard in Resources */,
 				FC84B7181EFA6D6000C1864E /* Assets.xcassets in Resources */,
 				FC84B7161EFA6D6000C1864E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC84B7661EFAEB2000C1864E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F205632604BD3FBD017F983 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		749A78131725F147CFD70173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A70B914E92A263EF93802990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0A947E0D14AAEDBDBF320D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insta Clone Parse/Pods-Insta Clone Parse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA88B05AB622EAE88AEA6A57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insta Clone Parse/Pods-Insta Clone Parse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC84B7071EFA6D6000C1864E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC84B7131EFA6D6000C1864E /* SecondViewController.swift in Sources */,
+				FC84B7131EFA6D6000C1864E /* uploadVC.swift in Sources */,
+				FC84B7271EFA902B00C1864E /* feedCell.swift in Sources */,
 				FC84B70F1EFA6D6000C1864E /* AppDelegate.swift in Sources */,
-				FC84B7111EFA6D6000C1864E /* FirstViewController.swift in Sources */,
+				FC84B7231EFA784400C1864E /* signInVC.swift in Sources */,
+				FC84B7111EFA6D6000C1864E /* feedVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84B7641EFAEB2000C1864E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC84B76B1EFAEB2000C1864E /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC84B76E1EFAEB2000C1864E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC84B7671EFAEB2000C1864E /* OneSignalNotificationServiceExtension */;
+			targetProxy = FC84B76D1EFAEB2000C1864E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC84B7141EFA6D6000C1864E /* Main.storyboard */ = {
@@ -186,6 +419,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -212,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -241,6 +476,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -261,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -271,8 +508,11 @@
 		};
 		FC84B7201EFA6D6000C1864E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664F4F2BDD76E26C02558175 /* Pods-Insta Clone Parse.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Insta Clone Parse/Insta Clone Parse.entitlements";
 				DEVELOPMENT_TEAM = 7SH627DBA4;
 				INFOPLIST_FILE = "Insta Clone Parse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -285,13 +525,46 @@
 		};
 		FC84B7211EFA6D6000C1864E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553182500D986A384F907E3B /* Pods-Insta Clone Parse.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Insta Clone Parse/Insta Clone Parse.entitlements";
 				DEVELOPMENT_TEAM = 7SH627DBA4;
 				INFOPLIST_FILE = "Insta Clone Parse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC84B7701EFAEB2000C1864E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE7BC48B4571A738CDAC329 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7SH627DBA4;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC84B7711EFAEB2000C1864E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA478E37CE37A2765BC402E6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7SH627DBA4;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,6 +589,16 @@
 				FC84B7211EFA6D6000C1864E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC84B7721EFAEB2000C1864E /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC84B7701EFAEB2000C1864E /* Debug */,
+				FC84B7711EFAEB2000C1864E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
