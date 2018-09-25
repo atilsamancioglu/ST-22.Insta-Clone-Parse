@@ -30,8 +30,8 @@ class signInVC: UIViewController {
             
             PFUser.logInWithUsername(inBackground: userNameText.text!, password: passwordText.text!, block: { (user, error) in
                 if error != nil {
-                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                    let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                    let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                     alert.addAction(okButton)
                     self.present(alert, animated: true, completion: nil)
                 } else {
@@ -47,8 +47,8 @@ class signInVC: UIViewController {
             })
             
         } else {
-            let alert = UIAlertController(title: "Error", message: "Username needed!", preferredStyle: UIAlertControllerStyle.alert)
-            let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            let alert = UIAlertController(title: "Error", message: "Username needed!", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
             alert.addAction(okButton)
             self.present(alert, animated: true, completion: nil)
         }
@@ -64,8 +64,8 @@ class signInVC: UIViewController {
             user.password = passwordText.text!
             user.signUpInBackground(block: { (success, error) in
                 if error != nil {
-                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                    let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                    let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                     alert.addAction(okButton)
                     self.present(alert, animated: true, completion: nil)
                 } else {
@@ -80,8 +80,8 @@ class signInVC: UIViewController {
             })
             
         } else {
-            let alert = UIAlertController(title: "Error", message: "Username needed!", preferredStyle: UIAlertControllerStyle.alert)
-            let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            let alert = UIAlertController(title: "Error", message: "Username needed!", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
             alert.addAction(okButton)
             self.present(alert, animated: true, completion: nil)
         }

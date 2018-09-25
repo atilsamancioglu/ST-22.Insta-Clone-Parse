@@ -39,8 +39,8 @@ class feedCell: UITableViewCell {
         
         likeObject.saveInBackground { (success, error) in
             if error != nil {
-                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                 alert.addAction(okButton)
                 UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
             } else {
@@ -50,8 +50,8 @@ class feedCell: UITableViewCell {
                 query.limit = 1
                 query.findObjectsInBackground(block: { (objects, error) in
                     if error != nil {
-                        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                         alert.addAction(okButton)
                         UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
                     } else {
@@ -82,8 +82,8 @@ class feedCell: UITableViewCell {
         
         commentObject.saveInBackground { (success, error) in
             if error != nil {
-                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                 alert.addAction(okButton)
                 UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
             } else {
@@ -93,8 +93,8 @@ class feedCell: UITableViewCell {
                 query.limit = 1
                 query.findObjectsInBackground(block: { (objects, error) in
                     if error != nil {
-                        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                         alert.addAction(okButton)
                         UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
                     } else {

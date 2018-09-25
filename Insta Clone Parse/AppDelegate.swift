@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
          let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
         
@@ -41,25 +41,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // OneSignal.syncHashedEmail(userEmail)
         
         
-        rememberUser()
         
-        let config = ParseClientConfiguration { (ParseMutableClientConfiguration) in
-            
-            ParseMutableClientConfiguration.applicationId = "11b144981119a15105fcd54afcb43b43e098d965"
-            ParseMutableClientConfiguration.clientKey = "38c866ef607792a126fa011dba786e0a29693646"
-            ParseMutableClientConfiguration.server = "http://ec2-52-88-249-139.us-west-2.compute.amazonaws.com:80/parse"
-            
+        let configuration = ParseClientConfiguration { (ParseMutableClientConfiguration) in
+            ParseMutableClientConfiguration.applicationId = "YnDqooINiwOgXJqTFDpSBdyqdeOxBANkpT62Rqor"
+            ParseMutableClientConfiguration.clientKey = "TEy1Bmln0oiuN3Ph1L0phnxArt5oNuE2x6moBNeZ"
+            ParseMutableClientConfiguration.server = "https://parseapi.back4app.com/"
         }
         
-        Parse.initialize(with: config)
+        Parse.initialize(with: configuration)
         
         let defaultACL = PFACL()
-        
         defaultACL.getPublicReadAccess = true
         defaultACL.getPublicWriteAccess = true
-        
         PFACL.setDefault(defaultACL, withAccessForCurrentUser: true)
         
+        rememberUser()
         
         return true
     }

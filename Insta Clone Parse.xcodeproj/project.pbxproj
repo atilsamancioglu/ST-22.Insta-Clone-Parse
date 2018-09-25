@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BE986AD7620BB1B7F44E9438 /* Pods_Insta_Clone_Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A415C0599CBCF3CE5A963F /* Pods_Insta_Clone_Parse.framework */; };
 		C4DC47465B6CAE5F120B3A2F /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AF0D2E4675396C2B2B4EF2 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		FC66F5A221517C6100B1813E /* selec.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66F5A121517C6100B1813E /* selec.png */; };
+		FC66F5A321517C6100B1813E /* selec.png in Resources */ = {isa = PBXBuildFile; fileRef = FC66F5A121517C6100B1813E /* selec.png */; };
 		FC84B70F1EFA6D6000C1864E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B70E1EFA6D6000C1864E /* AppDelegate.swift */; };
 		FC84B7111EFA6D6000C1864E /* feedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7101EFA6D6000C1864E /* feedVC.swift */; };
 		FC84B7131EFA6D6000C1864E /* uploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7121EFA6D6000C1864E /* uploadVC.swift */; };
@@ -17,7 +19,6 @@
 		FC84B71B1EFA6D6000C1864E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC84B7191EFA6D6000C1864E /* LaunchScreen.storyboard */; };
 		FC84B7231EFA784400C1864E /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7221EFA784400C1864E /* signInVC.swift */; };
 		FC84B7271EFA902B00C1864E /* feedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B7261EFA902B00C1864E /* feedCell.swift */; };
-		FC84B7521EFAD6EC00C1864E /* selec.png in Resources */ = {isa = PBXBuildFile; fileRef = FC84B7511EFAD6EC00C1864E /* selec.png */; };
 		FC84B76B1EFAEB2000C1864E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B76A1EFAEB2000C1864E /* NotificationService.swift */; };
 		FC84B76F1EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC84B7681EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		CCE7BC48B4571A738CDAC329 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A415C0599CBCF3CE5A963F /* Pods_Insta_Clone_Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_Clone_Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA478E37CE37A2765BC402E6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		FC66F5A121517C6100B1813E /* selec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selec.png; path = ../../../../../../Downloads/Images/selec.png; sourceTree = "<group>"; };
 		FC84B70B1EFA6D6000C1864E /* Insta Clone Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insta Clone Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC84B70E1EFA6D6000C1864E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC84B7101EFA6D6000C1864E /* feedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedVC.swift; sourceTree = "<group>"; };
@@ -63,7 +65,6 @@
 		FC84B71C1EFA6D6000C1864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC84B7221EFA784400C1864E /* signInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
 		FC84B7261EFA902B00C1864E /* feedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedCell.swift; sourceTree = "<group>"; };
-		FC84B7511EFAD6EC00C1864E /* selec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selec.png; path = ../../../../Downloads/Images/selec.png; sourceTree = "<group>"; };
 		FC84B7531EFAE14300C1864E /* Insta Clone Parse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Insta Clone Parse.entitlements"; sourceTree = "<group>"; };
 		FC84B7681EFAEB2000C1864E /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC84B76A1EFAEB2000C1864E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -134,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				FC84B7531EFAE14300C1864E /* Insta Clone Parse.entitlements */,
-				FC84B7511EFAD6EC00C1864E /* selec.png */,
 				FC84B70E1EFA6D6000C1864E /* AppDelegate.swift */,
+				FC66F5A121517C6100B1813E /* selec.png */,
 				FC84B7221EFA784400C1864E /* signInVC.swift */,
 				FC84B7101EFA6D6000C1864E /* feedVC.swift */,
 				FC84B7121EFA6D6000C1864E /* uploadVC.swift */,
@@ -208,11 +209,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Atil Samancioglu";
 				TargetAttributes = {
 					FC84B70A1EFA6D6000C1864E = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -227,6 +229,7 @@
 					};
 					FC84B7671EFAEB2000C1864E = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -254,7 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC84B7521EFAD6EC00C1864E /* selec.png in Resources */,
+				FC66F5A221517C6100B1813E /* selec.png in Resources */,
 				FC84B71B1EFA6D6000C1864E /* LaunchScreen.storyboard in Resources */,
 				FC84B7181EFA6D6000C1864E /* Assets.xcassets in Resources */,
 				FC84B7161EFA6D6000C1864E /* Main.storyboard in Resources */,
@@ -265,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC66F5A321517C6100B1813E /* selec.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -420,6 +425,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -470,6 +476,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -477,6 +484,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -518,7 +526,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -535,7 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -550,7 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -565,7 +573,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Insta-Clone-Parse.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

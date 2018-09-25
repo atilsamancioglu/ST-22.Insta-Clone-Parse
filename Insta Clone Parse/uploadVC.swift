@@ -46,10 +46,11 @@ class uploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        postImage.image = info[UIImagePickerControllerEditedImage] as? UIImage
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        postImage.image = info[.originalImage] as? UIImage
         self.dismiss(animated: true, completion: nil)
         postButton.isEnabled = true
+        
     }
 
  
@@ -59,7 +60,7 @@ class uploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
         let object = PFObject(className: "Posts")
         
-        let data = UIImageJPEGRepresentation(postImage.image!, 0.5)
+        let data = postImage.image!.jpegData(compressionQuality: 0.5)
         let pfImage = PFFile(name: "image.jpg", data: data!)
         
         object["postimage"] = pfImage
@@ -72,8 +73,8 @@ class uploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         
         object.saveInBackground { (success, error) in
             if error != nil {
-                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
-                let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             } else {
